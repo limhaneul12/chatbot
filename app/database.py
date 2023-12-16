@@ -8,7 +8,7 @@ from .config import settings
 engine = create_engine(
     "mysql+pymysql://{username}:{password}@{host}:{port}/{name}".format(
         username=settings.DB_USERNAME,
-        password=settings.DB_PASSWORD,
+        password=settings.DB_PASSWORD.get_secret_value(),
         host=settings.DB_HOST,
         port=settings.DB_PORT,
         name=settings.DB_DATABASE
