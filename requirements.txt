@@ -1,3 +1,4 @@
 sqlalchemy
 fastapi
 pydantic-settings
+uvicorn[standard]
