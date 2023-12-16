@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 
-import models
+from app import models
 from app.config import settings
 from lib.telegram import Telegram
 
 
 app = FastAPI()
-telegram = None
+telegram = Telegram(settings.TELEGRAM_BOT_TOKEN)
 
 
 # fastapi 가 실행되면 해당 함수를 실행하겠다 
