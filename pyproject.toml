@@ -14,6 +14,7 @@ uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
 pymysql = "^1.1.0"
 httpx = "^0.25.2"
 cryptography = "^41.0.7"
+devtools = "^0.12.2"
 
 
 [build-system]
